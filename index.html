@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Joker | Landing Page Ui Design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<header>
+	<a href="#" class="logo"><img src="logo2.png"></a>
+	<div class="toggle"><img src="toggle.png"></div>
+</header>
+    <div class="banner">
+    	<div class="content">
+    		<h2>Put on a <span>Happy</span> face</h2>
+    		<p>2019 | 18+ | 2h 1m | Dramas. In 1981 Gotham City, a struggling, mentally ill comic battles to be seen. His life takes a dark, gut-wrenching turn after he lashes back at attackers. Starring:Joaquin Phoenix,Robert De Niro,Zazie Beetz. </p>
+    		<a href="#" class="play" onclick="toggle()"><img src="play.png">Watch Trailer</a>
+    		<div class="slide"></div>
+
+            <ul class="sci">
+            	<li><a href="#"><img src="facebook.png"></a></li>
+            	<li><a href="#"><img src="twitter.png"></a></li>
+            	<li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+    	</div>
+    </div>
+    <div class="trailer">
+    	<video src="trailer.mp4" controls="true"></video>
+    	<img src="close.png"  onClick="toggle()" class="close" >
+    </div>
+
+    <script>
+
+    	// function closed(close){
+     //    let trailer = document.querySelector('trailer-jok');
+     //    trailer.style.opacity = 0;
+    	// }
+
+    	function toggle(){
+    		let trailer = document.querySelector('.trailer');
+    		let video = document.querySelector('video');
+    		trailer.classList.toggle('active');
+    		video.currentTime = 0;
+    		video.pause()
+    	}
+    </script>
+</body>
+</html>
